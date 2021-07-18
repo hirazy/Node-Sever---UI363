@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+        <script>
+        var socket = io('http://localhost:4001',{'transports': ['websocket', 'polling']});
+
+        socket.on('login', function (data) {
+            console.log(data);
+            // socket.emit('driver', { command: 1, token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwaG9uZSI6IjA5MDQ5OTk0ODMiLCJzZWNyZXQiOjE0OTYzMTA1OTksImlhdCI6MTUwMTU3OTk0NiwiZXhwIjoxNTAxNzUyNzQ2fQ.GGjDXHo2WxtN-kJ85Vhk-ZYceZMCInwJoE6NMXywDCw' });//login
+        });
+
+
+
+    </script>
+    <title>Test Socket</title>
+</head>
+<body>
+</body>
+</html>
